@@ -1,5 +1,3 @@
-var x = 10
-console.log('Variabel X adalah ' + x);
-var y = (x % 2 == 0) ? "Genap" : "Ganjil"
-console.log(y)
-alert('ini alert' + y)
+var angka1 = prompt('Masukan Angka :');
+var hasil = (angka1 % 2 == 0) ? "Genap" : "Ganjil";
+alert(angka1 + " Adalah bilangan " + hasil);
