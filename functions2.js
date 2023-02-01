@@ -1,14 +1,14 @@
 function jumlahVolumeKubus(k1, k2) {
   // Cari sisi masing-masing kubus
-  s1 = k1 / 4;
-  s2 = k2 / 4;
+  var s1 = k1 / 4;
+  var s2 = k2 / 4;
 
   // Cari volume Kubus
-  v1 = Math.pow(s1, 3);
-  v2 = Math.pow(s2, 3);
+  var v1 = Math.pow(s1, 3);
+  var v2 = Math.pow(s2, 3);
 
   // Jumlahkan volume kubus
-  jmlVlm = v1 + v2;
+  var jmlVlm = v1 + v2;
 
   return jmlVlm;
 }
