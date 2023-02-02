@@ -1,7 +1,11 @@
-function tambah(a, b) {
-  var hasil = a + b;
+function tambah() {
+  var hasil = 0;
+
+  for (i = 0; i < arguments.length; i++) {
+    hasil += arguments[i];
+  }
 
   return hasil;
 }
 
-alert(tambah(3, 8));
+console.log(tambah(3, 4, 1, 23));
