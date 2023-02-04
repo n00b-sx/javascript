@@ -27,3 +27,13 @@ function tambahPenumpang(namaPenumpang, penumpang) {
     }
   }
 }
+
+function penumpangTurun(namaPenumpang, penumpang) {
+  // telusuri isi angkot
+  for (var i = 0; i < penumpang.length; i++) {
+    if (penumpang[i] == namaPenumpang) {
+      penumpang[i] = undefined;
+      return penumpang;
+    }
+  }
+}
