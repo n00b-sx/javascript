@@ -29,11 +29,24 @@ function tambahPenumpang(namaPenumpang, penumpang) {
 }
 
 function penumpangTurun(namaPenumpang, penumpang) {
-  // telusuri isi angkot
-  for (var i = 0; i < penumpang.length; i++) {
-    if (penumpang[i] == namaPenumpang) {
-      penumpang[i] = undefined;
-      return penumpang;
+  // Jika penumpang kosong
+  if (penumpang.length == 0) {
+    // berikan info bahwa tidak ada penumpang di dalam angkot
+    console.log('Tidak ada penumpang di dalam angkot');
+  } else {
+    // telusuri seluruh penumpang
+    for (var i = 0; i < penumpang.length; i++) {
+      // turunkan penumpang
+      if (penumpang[i] == namaPenumpang) {
+        // keluarkan penumpang
+        penumpang[i] = undefined;
+      } else if (i == penumpang.length - 1) {
+        // jika tidak ada penumpang yang di cari tampilkan pesan tidak ada penumpang dengan nama yang disebutkan
+        console.log(`${namaPenumpang} tidak ada di dalam daftar nama penumpang`);
+        return penumpang;
+      }
     }
   }
+
+  return penumpang;
 }
