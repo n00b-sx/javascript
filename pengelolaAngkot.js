@@ -47,6 +47,5 @@ function penumpangTurun(namaPenumpang, penumpang) {
       }
     }
   }
-
   return penumpang;
 }
