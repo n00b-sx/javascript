@@ -12,15 +12,21 @@
 
   <script>
 
-    const persons = {};
+    const persons = {
+      nama: "Mohammad Syahrul Noor",
+      umur: 30,
+      alamat: "Jl. 23 Januari No. 76"
+    };
 
     // Menambah atau mengubah
 
-    persons["nama"] = "Mohammad Syahrul Noor";
-    persons["umur"] = 28;
-    persons["alamat"] = "Indonesia";
+    // persons["nama"] = "Mohammad Syahrul Noor";
+    // persons["umur"] = 28;
+    // persons["alamat"] = "Indonesia";
 
-    console.table(persons);
+    console.info(`Nama : ${persons.nama}`);
+    console.info(`Umur : ${persons.umur} Tahun`);
+    console.info(`Alamat : ${persons.alamat}`);
 
     // Menghapus attribute/properties
     delete persons["umur"];
