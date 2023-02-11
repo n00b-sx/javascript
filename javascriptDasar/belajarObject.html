@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipe Data Object</title>
+</head>
+
+<body>
+
+  <script>
+
+    const persons = {};
+
+    // Menambah atau mengubah
+
+    persons["nama"] = "Mohammad Syahrul Noor";
+    persons["umur"] = 28;
+    persons["alamat"] = "Indonesia";
+
+    console.table(persons);
+
+    // Menghapus attribute/properties
+    delete persons["umur"];
+
+    console.table(persons);
+  </script>
+</body>
+
+</html>
