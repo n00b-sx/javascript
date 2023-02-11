@@ -28,7 +28,9 @@
     console.info(`Umur : ${persons.umur} Tahun`);
     console.info(`Alamat : ${persons.alamat}`);
 
-    // Menghapus attribute/properties
+    console.table(persons);
+
+    // Menghapus attribute / properties
     delete persons["umur"];
 
     console.table(persons);
