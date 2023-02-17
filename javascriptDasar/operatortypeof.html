@@ -5,32 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belajar Nullish Optional Chaining</title>
+  <title>Belajar Truthy dan Falsy</title>
 </head>
 
 <body>
   <script>
 
-    // Ini pakai If
-    let persons = {
-      address: {
-        country: "indonesia"
-      }
-    };
+    let data = "False";
 
-    let say;
-    // Dilakukan pengecekan terhadap isi objek apakah bernilai null atau undefined
-    if (persons.address !== null && persons.address !== undefined) {
-      say = persons.address.country;
+    if (data) {
+      alert("True");
     } else {
-      say = `Tidak ada properti address pada objek person`;
+      alert("False");
     }
-
-    document.writeln(`<p>${say}</p>`)
-
-    // Ini pakai optional chaining
-    say = persons?.address?.country;
-    document.writeln(`<p>${say}</p>`);
 
   </script>
 </body>
