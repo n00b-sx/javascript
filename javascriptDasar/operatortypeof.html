@@ -5,18 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belajar Operator Type Of</title>
+  <title>Belajar Operator In</title>
 </head>
 
 <body>
   <script>
-    let data;
+    const persons = {
+      firstName: "Mohammad",
+      middleName: "Syahrul",
+      lastName: "Noor"
+    }
 
-    data = true;
+    // let cari = prompt("Masukan kata yang ingin di cari");
 
-    const dataTypeOf = typeof data;
-
-    document.writeln(`Tipe data dari variabel data adalah ${dataTypeOf}`);
+    if ("firstName" in persons) {
+      document.writeln(`<p>${persons.firstName}</p>`);
+    } else {
+      document.writeln(`Data yang dicari tidak ditemukan`);
+    }
   </script>
 </body>
 
