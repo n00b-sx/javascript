@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Switch dan case</title>
+</head>
+
+<body>
+  <script>
+
+    const nilai = prompt(`Masukan nilai :`);
+
+    switch (nilai) {
+      case "A":
+        document.writeln(`<p>Wow, Selamat anda lulus dengan nilai terbaik</p>`);
+        break;
+      case "B":
+      case "C":
+        document.writeln(`<p>Selamat anda lulus</p>`);
+        break;
+      case "D":
+        document.writeln(`<p>Maaf anda tidak lulus</p>`);
+        break;
+      default:
+        document.writeln(`<p>Salah jurusan bro!!</p>`);
+    }
+  </script>
+</body>
+
+</html>
